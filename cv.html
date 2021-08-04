@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+    <title>Document</title>
+    <style>
+        .parallax {
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img_1 {
+            /* The image used */
+            background-image: url("1.jpg");
+        }
+
+        .img_2 {
+            background-image: url("2.jpg");
+        }
+
+        .img_3 {
+            background-image: url("3.jpg");
+        }
+
+        .img_4 {
+            background-image: url("4.jpg");
+        }
+
+        .intro {
+            width: 600px;
+            min-height: 300px;
+            /* background-color: rgba(255, 255, 255, 0.63); */
+            margin: 0px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="h-16 flex items-center text-center  fixed z-50 w-full justify-center">
+        <ul class="list-none flex   ">
+            <li class="name_1 mr-10">ELAINE</li>
+            <li class="mx-6 "><a href="">HOME</a> </li>
+            <li class="mx-6 "><a href="">PROFESSIONAL</a> </li>
+            <li class="mx-6 "><a href="">EXPERINCE</a> </li>
+            <li class="mx-6 "><a href="">PORTFOLIO</a> </li>
+            <li class="mx-6 "><a href="">CONTACT</a> </li>
+        </ul>
+    </header>
+
+    <div class="parallax img_1 h-screen relative">
+        <div class="intro pt-12">
+            <h1 class="text-5xl text-white font-black">I'm </h1>
+            <h1 class=" text-7xl font-black text-white tracking-widest">Elaine.</h1>
+            <h5 class="leading-loose font-bold text-gray-200">Want to be a UX/UI Designer & Web Developer.</h5>
+        </div>
+    </div>
+    <div class=" parallax img_2 h-screen">
+    </div>
+    <div class="parallax img_3 h-screen"></div>
+    <div class="parallax img_4 h-screen"></div>
+    <!-- <div style="height:1000px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div> -->
+
+</body>
+
+</html>
