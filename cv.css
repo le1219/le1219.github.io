@@ -267,7 +267,7 @@ h1,h2{
 .s_box1{
     position: absolute;
     width: 60%;
-    margin-left: 750px;
+  left: 1000px;
     margin-top: 200px;
     /* background-color: rgba(53, 53, 53); */
     padding: 3%;
@@ -338,15 +338,25 @@ footer{
     text-align: center;
 }
 /* -------------------rwd---------------------- */
-@media screen and (max-width:1200px) {
- .s_box1{
-     margin-left: 650px;
- }   
-}
- @media screen and (max-width:1200px) {
+@media screen and (max-width:1600px) {
     .s_box1{
-        margin-left: 600px;
-    }   
+        left: 800px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .s_box1{
+        left:700px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .s_box1{
+        left:600px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .s_box1{
+        left:500px;
+    }
 }
 @media screen and (max-width:992px){
     .aa{
@@ -365,9 +375,7 @@ footer{
             margin: 10px;
             
         }
-        .s_box1{
-            margin-left: 500px;
-        }  
+     
         .square {
             padding:1%;
             width: 60%;
@@ -391,12 +399,13 @@ footer{
     .square button{
         margin-top: 3%;
     }
-    .s_box1{
-        margin-left: 450px;
-    }  
+    
     
 }
 @media screen and (max-width:768px) {
+    .img_2{
+        height: 150vh;
+    }
     .intro{
         padding-top: 15vh;
     }
@@ -421,11 +430,12 @@ footer{
         width: 100%;
         background-color: rgba(53, 53, 53);
         text-align: left;
-       
         position: relative;
         margin: 0px;
+        left: 0px;
         margin-top: 10px;
     }
+    
     .square {
         padding:1%;
         width: 70%;
