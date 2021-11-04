@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/1005.css">
+</head>
+
+<body>
+    <section class="herosection">
+        <div class="switch">
+            <div class="circle trans5s "></div>
+        </div>
+        <div class="flex herosection_css">
+            <img src="./pic/hk6.jpeg" alt="">
+            <div class="herosection_intro">
+                <h3>HONGKONG</h3>
+                <h2>WE LOVE HONGKONG</h2>
+                <p>The beauty of Hong Kong is not visible to the naked eye, you need to feel it yourself</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro_section">
+        <div class="line"></div>
+        <div class="flex intro_section_css">
+            <div class="herosection_intro">
+                <h3>Lion Mountain</h3>
+                <h2>Implication</h2>
+                <p>Always be strong Never give up.
+                    Though deep is the dread that lies ahead,
+                    Yet still, with our faith, on we tread.
+                </p>
+            </div>
+            <img src="./pic/hk6.jpeg">
+        </div>
+    </section>
+
+    <section class="main_section">
+        <div class="container spec">
+            <!-- repeat -->
+            <div class="hk_intro flex">
+                <img src="./pic/s1.jpeg" class="hk_img">
+                <div class="intro_hk">
+                    <h2>Lamma Island
+                    </h2>
+                    <p>
+                        Lamma Island is the fourth largest island in Hong Kong.Dalrymple misinterpreted that as the name
+                        of the island.</p>
+                </div>
+            </div>
+            <div class="hk_intro flex">
+                <img src="./pic/s2.jpeg" class="hk_img">
+                <div class="intro_hk">
+                    <h2>Tai O
+                    </h2>
+                    <p>Tai O is located in the western part of Hong Kong. It is the most famous existing fishing village
+                        in Hong Kong. The village is partly located on Tai O Island.</p>
+                </div>
+            </div>
+            <div class="hk_intro flex">
+                <img src="./pic/s3.jpeg" class="hk_img">
+                <div class="intro_hk">
+                    <h2>Mui Wo
+                    </h2>
+                    <p>Located in the eastern part of Lantau Island in the outlying islands of Hong Kong's New
+                        Territories. Mui Wo has a beautiful environment and is a good place for an outing in Hong Kong.
+                    </p>
+                </div>
+            </div>
+            <div class="hk_intro flex">
+                <img src="./pic/s4.jpeg" class="hk_img">
+                <div class="intro_hk">
+                    <h2>Peng Chau
+                    </h2>
+                    <p>Peng Chau looks like a "concave" character, and the sinking place is the East Bay; the south and
+                        north sides are called Nanwan and Beiwan respectively; there is a "fishing stone" at the end of
+                        the northeast.</p>
+                </div>
+            </div>
+            <div class="hk_intro flex">
+                <img src="./pic/s5.jpeg" class="hk_img">
+                <div class="intro_hk">
+                    <h2>Discovery Bay
+                    </h2>
+                    <p>your destination for outdoor adventure, culinary delights, live entertainment and more. Recharge,
+                        rediscover and experience all that Discovery Bay has to offer. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section class="section4">
+        <div class="container section4_css ">
+            <div class="s">
+                <img src="./pic/hk7.jpeg" class="section4_img">
+                <div class="float_intro">
+                    <h3>PEAK</h3>
+                    <p>intrp PEAK Lorem ipsum, dolor sit amet consectetu totam recusandae, fugiat quis!</p>
+                </div>
+            </div>
+            <div class="section_intro">
+                <img src="./pic/hk9.jpeg" class="section4_smallimg">
+                <img src="./pic/hk10.jpeg" class="section4_smallimg">
+                <img src="./pic/hk8.jpeg" class="section4_smallimg">
+                <p class="peak_intro">The Peak Tram is undergoing a substantial Upgrade of the Peak Tram system and
+                    stations
+                </p>
+            </div>
+    </section>
+    <section class="section_5">
+        <div class="container">
+            <h3>MOST OF THE PLEACE</h3>
+            <p>saepe quasi, quis provident ad minima et quae tempore.</p>
+            <div class="another_hk">
+                <div class="card">
+                    <img src="./pic/hks51.jpeg">
+                    <p>Cheung Chau is an island 10 kilometres southwest of Hong Kong
+                        Island.</p>
+                </div>
+                <div class="card">
+                    <img src="./pic/hks51.jpeg">
+                    <p>Cheung Chau is an island 10 kilometres southwest of Hong Kong
+                        Island.</p>
+                </div>
+                <div class="card">
+                    <img src="./pic/hks51.jpeg">
+                    <p>Cheung Chau is an island 10 kilometres southwest of Hong Kong
+                        Island.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="last_section">
+        <p>Hong Kong welcomes you</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.switch').click(function () {
+            $('.circle').toggleClass('circle2');
+            $('.herosection').toggleClass('second_bg');
+        })
+        $(window).scroll(function () {
+            $('.intro_section_css').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show');
+                }
+                else {
+                    $(item).removeClass('show');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.spec').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show2');
+                }
+                else {
+                    $(item).removeClass('show2');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.section4_img').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show3');
+                }
+                else {
+                    $(item).removeClass('show3');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.float_intro').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show4');
+                }
+                else {
+                    $(item).removeClass('show4');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
