@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+     <!-- google font -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!-- jquery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+        <nav>
+             <ul>
+                 <li id="name">ELaine Lai</li>
+                <li>
+                    <a href="./index.html">About Me</a>
+                </li>
+                <li>
+                    <a href="./work.html">Resume</a>
+                </li>
+                <li><a href="./project.html">Project</a>
+                </li>
+             </ul>
+        </nav>
+        <section class="herosection">
+            <div class="flex ">
+                <div class="lpart"> 
+                    <div class="box">
+                            <div class="top">
+                                <img src="./pic/photo.8ecc6991.jpg" alt="">
+                            </div>
+                        <div class="labelFlex">
+                            <p class="label">#開朗樂觀</p>
+                            <p class="label">#堅強獨立</p>
+                            <p class="label">#快速適應</p>
+                            <p class="label">#獅子山下精神</p>
+                        </div>
+                        
+                        <div class="deepdart">    
+                        </div>
+                    </div>
+                </div>
+                <div class="herosection_intro">
+                    <h2>You Can Call Me ELaine</h2>
+                    <p>Hello My name is Elaine ，我是賴妍林
+                        2010年從香港來到台灣升學。
+                        2015年6月畢業於世新大學資管系，
+                        
+                        從小家庭環境培養著，堅強獨立、個性開朗，在台灣生活已超過10年也熱愛台灣這片土地，對於台灣文化十分融入，所以畢業後便留台工作。</p>
+                </div>
+            </div>
+        </section>
+
+  
+    <!-- section4 -->
+    <!-- <section class="section4">
+        <div class="container section4_css ">
+            <div class="s">
+                <img src="./pic/hk7.jpeg" class="section4_img">
+                <div class="float_intro">
+                    <h3></h3>
+                    <p>intrp PEAK Lorem ipsum, dolor sit amet consectetu totam recusandae, fugiat quis!</p>
+                </div>
+            </div>
+            <div class="section_intro">
+                <img src="./pic/hk9.jpeg" class="section4_smallimg">
+                <img src="./pic/hk10.jpeg" class="section4_smallimg">
+                <img src="./pic/hk8.jpeg" class="section4_smallimg">
+                <p class="peak_intro">The Peak Tram is undergoing a substantial Upgrade of the Peak Tram system and
+                    stations
+                </p>
+            </div>
+    </section> -->
+    
+    <footer>
+        © 2022 by Lai Elaine © 2022 by Lai Elaine
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.switch').click(function () {
+            $('.circle').toggleClass('circle2');
+            $('.herosection').toggleClass('second_bg');
+        })
+        $(window).scroll(function () {
+            $('.intro_section_css').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show');
+                }
+                else {
+                    $(item).removeClass('show');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.spec').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show2');
+                }
+                else {
+                    $(item).removeClass('show2');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.section4_img').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show3');
+                }
+                else {
+                    $(item).removeClass('show3');
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $('.float_intro').each(function (index, item) {
+                console.log('item:', $(item).offset().top);
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show4');
+                }
+                else {
+                    $(item).removeClass('show4');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

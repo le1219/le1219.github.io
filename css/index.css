@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    margin: 0px auto;
+}
+
+h2,
+h3,
+p {
+    color: rgb(77, 20, 20);
+}
+
+/* nav */
+nav {
+    height: 70px;
+    background-color: rgba(230, 230, 250, 0.71);
+    width: 90%;
+    margin: 0px auto;
+    line-height: 3rem;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 99;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li {
+    list-style: none;
+    color: brown;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: grey;
+}
+
+#name {
+    margin-right: 100px;
+    font-size: 26px;
+}
+
+
+.herosection {
+    padding-top: 100px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+.lpart {
+    width: 40%;
+    height: 500px;
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 80%;
+    background-color: lightblue;
+    position: absolute;
+    top: 10%;
+    right: -30px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.labelFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.label {
+    margin: 5px 10px;
+    padding: 2px 5px;
+    background-color: #ffffffd8;
+    border-radius: 10px;
+}
+
+.deepdart {
+    height: 50px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+}
+
+.herosection_intro {
+    margin: 120px 0 0 70px;
+    width: 40%;
+}
+
+.herosection_intro>p {
+    line-height: 2rem;
+}
+
+.top {
+    width: 100%;
+    text-align: center;
+}
+
+.top>img {
+    width: 200px;
+    height: 240px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+
+
+/* footer Start */
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    color: lightgray;
+    background-color: lavender;
+}
+
+/* rwd */
+@media screen and (max-width:1024px) {
+    #name {
+        margin-right: 50px;
+        font-size: 26px;
+    }
+
+    nav>ul>li {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:798px) {
+    .herosection>.flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .herosection .herosection_intro {
+        margin: 0px;
+        width: 500px;
+    }
+
+    #name {
+        font-size: 22px;
+        margin-right: 30px;
+    }
+
+    nav>ul>li {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+
+    nav {
+        height: 45px;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width:598px) {
+    nav {
+        height: 40px;
+        line-height: 1.5rem;
+        width: 95%;
+
+    }
+
+    nav>ul {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    #name {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    nav>ul>li {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .lpart {
+        width: 90%
+    }
+
+    .box {
+        top: 30px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+    #name {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    nav>ul>li {
+        font-size: 13px;
+        margin-right: 12px;
+    }
+}
