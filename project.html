@@ -87,6 +87,39 @@
                      <p>裝置製作：Axure</p>
                  </div>
             </div>
+            <div class="card">
+                <div class="projectintro">
+                    <div class="lpart"><img class="big" src="./pic/24.jpg" >
+                    </div>
+                    <div class="changepart">
+                        <h6 class="title ">物流模組
+                        </h6>
+                        <div class="changeimg">
+                            <div class="smallpic">
+                                <img src="./pic/24.jpg">
+                            </div>
+                            <div class="smallpic">
+                                <img src="./pic/21.jpg"  class="small">
+                            </div>
+                            <div class="smallpic">
+                                <img src="./pic/22.jpg"  class="small">
+                            </div>
+                            <div class="smallpic">
+                                <img src="./pic/23.jpg"  class="small">
+                            </div>
+                            <div class="smallpic">
+                                <img src="./pic/25.jpg"  class="small">
+                            </div>
+                         </div>     
+                    </div>
+                </div>
+                <div class="intro">
+                      <h4 class="title">物流模組
+                     </h4>
+                     <p>裝置應用：Website、App、Awd</p>
+                     <p>裝置製作：axure </p>
+                 </div>
+            </div>
             <div class="card" id="j2">
                 <div class="projectintro">
                     <div class="lpart"><img class="big" src="./pic/b1.jpg" >
@@ -131,7 +164,7 @@
                     <div class="lpart"><img class="big" src="./pic/a1.jpg" >
                     </div>
                     <div class="changepart">
-                        <h6 class="title ">前台網頁版
+                        <h6 class="title ">店裏與FB文宣
                         </h6>
                         <div class="changeimg">
                             <div class="smallpic">
@@ -172,7 +205,13 @@
         var bigImgSrc = $(this).parents('.card').find('.big').attr('src');
         var smallImgSrc = $(this).attr('src');
            $(this).parents('.card').find('.big').attr('src',smallImgSrc);
-           
+           if(smallImgSrc == './pic/22.jpg'){
+            $(this).parents('.card').find('.big').css('width','90%').css('height','auto');
+           }else if(smallImgSrc == './pic/21.jpg'){
+            $(this).parents('.card').find('.big').css('width','90%').css('height','auto');
+           }
+           else{
+            $(this).parents('.card').find('.big').css('width','auto').css('height','360px');}
         });
 
 
