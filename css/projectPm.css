@@ -81,20 +81,7 @@ section {
 .title {
     text-align: left;
     text-decoration: underline;
-
     font-size: 20px;
-}
-
-.card {
-    width: 80%;
-    height: 300px;
-    margin: 0px auto;
-    box-shadow: 5px 5px 20px lightgray;
-    margin-bottom: 50px;
-}
-
-.card:nth-child(n+1) {
-    flex-direction: row-reverse;
 }
 
 .p1 {
@@ -104,33 +91,22 @@ section {
     line-height: 15rem;
 }
 
-.projectintro,
-.flex {
+.projectintro {
+    width: 80%;
+    height: 300px;
+    margin: 0px auto;
+    box-shadow: 5px 5px 20px lightgray;
+    margin-bottom: 50px;
     display: flex;
+
 }
 
+
 .projectintro>.lpart {
-    width: 400px;
+    width: 50%;
     height: 300px;
 }
 
-
-.changepart {
-    padding: 10px;
-}
-
-.changeimg,
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.smallpic>img {
-    width: auto;
-    height: 60px;
-    margin: 10px;
-    cursor: pointer;
-}
 
 .seemore {
     color: grey;
@@ -141,6 +117,7 @@ section {
 
 .intro {
     padding: 20px;
+    width: 70%;
 }
 
 
@@ -158,18 +135,11 @@ footer {
 /* RWD */
 @media screen and (max-width:1024px) {
     .projectintro {
-        flex-wrap: wrap;
-    }
-
-    .projectintro>.lpart {
-        width: 80%;
-        height: 360px;
-        text-align: center;
-        margin: 0px auto;
+        width: 90%;
     }
 
     .intro {
-        padding: 10px 20px;
+        padding: 10px;
     }
 
     .intro>.title {
@@ -188,12 +158,6 @@ footer {
 }
 
 @media screen and (max-width:798px) {
-    .lpart>img {
-        background-size: contain;
-        height: 300px;
-        width: auto;
-    }
-
     .foucsbox {
         height: 150px;
     }
@@ -222,8 +186,19 @@ footer {
         line-height: 1.25rem;
     }
 
+    .projectintro {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
     .projectintro>.lpart {
-        overflow: scroll;
+        width: 100%;
+    }
+
+    .intro {
+        width: 90%;
+        padding: 20px;
     }
 }
 
@@ -252,23 +227,6 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-
-    .projectintro {
-        width: 100%;
-    }
-
-    .projectintro>.lpart {
-        height: 250px;
-        width: 350px;
-        overflow: scroll;
-    }
-
-    .lpart>img {
-        background-size: contain;
-        height: 100%;
-        width: auto;
-    }
-
     .foucsbox {
         height: 150px;
         width: 80%;

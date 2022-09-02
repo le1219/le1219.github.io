@@ -98,7 +98,7 @@ h5 {
     color: grey;
     position: fixed;
     bottom: 100px;
-    right: 320px;
+    right: 100px;
 }
 
 /* footer Start */
@@ -114,25 +114,6 @@ footer {
 
 /* RWD */
 @media screen and (max-width:1024px) {
-    .projectintro {
-        flex-wrap: wrap;
-    }
-
-    .projectintro>.lpart {
-        width: 80%;
-        height: 360px;
-        text-align: center;
-        margin: 0px auto;
-    }
-
-    .intro {
-        padding: 10px 20px;
-    }
-
-    .intro>.title {
-        margin: 0;
-    }
-
     #name {
         margin-right: 50px;
         font-size: 26px;
@@ -142,14 +123,13 @@ footer {
         font-size: 20px;
         margin-right: 30px;
     }
+
+    .area {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:798px) {
-    .lpart>img {
-        background-size: contain;
-        height: 300px;
-        width: auto;
-    }
 
     .foucsbox {
         height: 150px;
@@ -179,9 +159,16 @@ footer {
         line-height: 1.25rem;
     }
 
-    .projectintro>.lpart {
-        overflow: scroll;
+    .up {
+        bottom: 50px;
+        right: 50px;
     }
+
+    .area {
+        width: 90%;
+        padding: 30px;
+    }
+
 }
 
 @media screen and (max-width:598px) {
@@ -210,21 +197,6 @@ footer {
 
 @media screen and (max-width:500px) {
 
-    .projectintro {
-        width: 100%;
-    }
-
-    .projectintro>.lpart {
-        height: 250px;
-        width: 350px;
-        overflow: scroll;
-    }
-
-    .lpart>img {
-        background-size: contain;
-        height: 100%;
-        width: auto;
-    }
 
     .foucsbox {
         height: 150px;
